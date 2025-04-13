@@ -6,73 +6,65 @@
     <title>نبذة عنا</title>
     <link rel="stylesheet" href="../css/notic.css">
     <link rel="stylesheet" href="../css/all.min.css">
- 
-
 </head>
 <body>
+
+
+
   <header>
-    <div class="container-header">
-                                                         <!-- اللوجوا -->
+    <div class="container">
       <div class="logo">
-        <img src="../imege/logo.jpg" alt="صيدلية الحياة">
+        <img  src="../imege/logo3-removebg-preview.png" alt="logo">
       </div>
-      
-        <div class="dark-mode">
-          <button id="dark-mode-toggle">تبديل الوضع</button>
-        </div>
-                                                               <!-- السيرش -->
-        <div class="search-box">
-          <input type="text" placeholder="ابحث هنا">
-          <div class="search-icon">
-                                                      <!-- لينك الايقونه الي تبع السيرش -->
-             <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
-          </div>
-        </div>                                                       
+
+      <div class="form">
+        <input type="search" placeholder="ابحث">
       </div>
+
+      <div class="dark-mode">
+        <button id="dark-mode-toggle">تبديل الوضع</button>
+      </div>
+
+      <div class="hamburger" id="hamburger">☰</div>
     </div>
   </header>
-                                                                <!-- ال nav  -->
-<nav class="navbar">
-  <div class="navbar-items">
-    <div  class="nav-item"><a style="color: white;" href="../html/home.html"><i class="fa-solid fa-house fa-2xl"></i></a></div>
-    
-    <div class="nav-item"> أسال طبيب 
-      <div class="dropdown">
-        <a href="https://www.facebook.com/share/19aNJYF8UC/" target="_blank">تواصل عبر فيسبوك</a>
-        <a href="https://wa.me/01102562146" target="_blank">تواصل عبر واتساب</a>
-        <a href="https://www.instagram.com/hisham_mahmoud_111?igsh=MXR2MDlwNGJnYjVudg==" target="_blank">تواصل عبر انستجرام</a>
-        
 
-        
-      </div>
-    </div>
-    
-    <div class="nav-item">منتجات 
-      <div class="dropdown">
-        <a href="../html/p.s.html">عناية يومية</a>
-        <a href="../html/products.html" target="_blank">فيتامينات</a>
-        <a href="../html/helth.html"> أدويةسكر وضغط </a>
-      </div>
-    </div>
-    <div class="nav-item"><a  style="color: white;" href="../index.html">نصائح طبيه </a></div>
-    <div class="nav-item1"><a href="../html/notic.html">نبذة عنا</a></div>
+  <nav class="navbar">
+    <ul class="nav-links" id="navLinks">
+      <div class="nav-item"><a  href="../index.html"><i class="fa-solid fa-house fa-xl"></i></a>  </div>
 
+      <li class="dropdown">
+        <a class="main" href="#">أسأل طبيب</a>
+        <ul class="dropdown-menu">
+          <li><a href="https://www.facebook.com/share/19aNJYF8UC/" target="_blank">تواصل عبر فيسبوك</a>          </li>
+          <li><a href="https://wa.me/01102562146" target="_blank">تواصل عبر واتساب</a>          </li>
+          <li><a href="https://www.instagram.com/hisham_mahmoud_111?igsh=MXR2MDlwNGJnYjVudg==" target="_blank">تواصل عبر انستجرام</a>          </li>
+        </ul>
+      </li>
 
-    <div class="nav-item"><a  style="color: white;" href="../html/contect.html">أتصل بنا</a></div>
-   
-    </div>
-  </div>
-</nav>
-     
+      <li class="dropdown">
+        <a class="main" href="#">المنتجات</a>
+        <ul class="dropdown-menu">
+          <li><a href="../html/p.s.html">عناية يومية</a></li>
+          <li><a href="../html/products.html" target="_blank">فيتامينات</a>          </li>
+          <li><a href="../html/helth.html"> أدوية سكر وضغط </a></li>
+        </ul>
+      </li>
 
-
-
+      <li class="dropdown">
+        <a class="main" href="../html/ideas.html"> نصائح طبيه </a>
+      </li>
+      <li class="dropdown">
+        <a class="main" href="../html/notic.html">نبذه عنا</a>
+      </li>
+      <li><a class="main" href="../html/contect.html">تواصل معنا</a></li>
+    </ul>
+  </nav>
 
 
 
       <div class="imgess">
-        <!-- <img src="../imege/notic.jpg" alt=""> -->
-      </div>
+      </div> 
 
       <div class="pr">
         <h3>نبذة عنا:</h3>
@@ -106,8 +98,8 @@
     <div class="footer-section">
       <h4>روابط سريعة</h4>
       <ul>
-        <li><a href="../html/home.html"><i class="fa-solid fa-house fa-2xl"></i></a></li>
-        <li><a href="../html/">أسال طبيب</a></li>
+        <li><a href="../index.html"><i class="fa-solid fa-house fa-2xl"></i></a></li>
+        <li><a href="https://wa.me/01102562146">أسال طبيب</a></li>
         <li><a href="../index.html">نصائح طبية</a></li>
         <li><a href="../html/products.html">منتجات</a></li>
         <li><a href="../html/notic.html">نبذة عنا</a></li>
@@ -127,6 +119,25 @@
     </div>
   </div>
 </footer>
-</body>
 
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+
+
+  const toggleButton = document.getElementById("dark-mode-toggle");
+
+  toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+  });
+
+
+
+</script>
+</body>
 </html>

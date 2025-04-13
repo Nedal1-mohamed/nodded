@@ -10,7 +10,7 @@ function loadProductDetails() {
         document.getElementById("product-des").innerText = product.dest;
         document.getElementById("product-specifications").innerText = product.specifications;
 
-        loadRelatedProducts(product.category);
+        // loadRelatedProducts(product.category);
     } else {
         document.querySelector(".product-details").innerHTML = "<p>لم يتم العثور على المنتج</p>";
     }
@@ -39,3 +39,10 @@ function loadProductDetails() {
 
 window.onload = loadProductDetails;
 {/* </script> */}
+
+
+
+const toggleButton = document.getElementById("dark-mode-toggle");
+toggleButton.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
