@@ -211,9 +211,9 @@
     color: #1c4285;
     font-size: 28px;
 }
-body.dark .ask-pharmacist h2{
+/* body.dark .ask-pharmacist h2{
   color: rgb(31, 251, 7);
-}
+} */
 body.dark .ask-pharmacist p{
   color: white;
 }
