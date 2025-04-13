@@ -263,7 +263,8 @@ header .container .hamburger  {
 
 @media (max-width:767px){
     .products-container .product-card img{
-       margin-left: 50px;
+      display: block;
+       /* margin-left: 200px; */
     }
 }
 
@@ -307,7 +308,7 @@ footer {
         flex-direction: column;
     }
     .footer-section{
-        margin-top: 25px;
+        margin-top: 20px;
     }
   }
   .footer-section i{
